@@ -20,7 +20,7 @@ template <class T, class C> T sum (const C& c)
 {
     T res = 0;
     for (typename C::const_iterator i = c.begin(); i != c.end(); ++i)
-        res += i->value;
+        res += *i;
     return res;
 }
 
