@@ -39,38 +39,6 @@ public:
             return tmp;
         }
 
-        bool operator<(const iterator &iter) const {
-            return ptr < iter.ptr;
-        }
-
-        bool operator>(const iterator &iter) const {
-            return ptr > iter.ptr;
-        }
-
-        bool operator<=(const iterator &iter) const {
-            return ptr <= iter.ptr;
-        }
-
-        bool operator>=(const iterator &iter) const {
-            return ptr >= iter.ptr;
-        }
-
-        bool operator<(const const_iterator &iter) const {
-            return ptr < iter.ptr;
-        }
-
-        bool operator>(const const_iterator &iter) const {
-            return ptr > iter.ptr;
-        }
-
-        bool operator<=(const const_iterator &iter) const {
-            return ptr <= iter.ptr;
-        }
-
-        bool operator>=(const const_iterator &iter) const {
-            return ptr >= iter.ptr;
-        }
-
         bool operator==(const iterator &iter) const {
             return ptr == iter.ptr;
         }
@@ -105,7 +73,6 @@ public:
 
         const_iterator(const iterator &iter) : ptr(iter.ptr) {}
 
-        /*reference*/
         reference operator*() const {
             return ptr->value;
         }
@@ -131,38 +98,6 @@ public:
 
         bool operator!=(const const_iterator &iter) const {
             return ptr != iter.ptr;
-        }
-
-        bool operator<(const iterator &iter) const {
-            return ptr < iter.ptr;
-        }
-
-        bool operator>(const iterator &iter) const {
-            return ptr > iter.ptr;
-        }
-
-        bool operator<=(const iterator &iter) const {
-            return ptr <= iter.ptr;
-        }
-
-        bool operator>=(const iterator &iter) const {
-            return ptr >= iter.ptr;
-        }
-
-        bool operator<(const const_iterator &iter) const {
-            return ptr < iter.ptr;
-        }
-
-        bool operator>(const const_iterator &iter) const {
-            return ptr > iter.ptr;
-        }
-
-        bool operator<=(const const_iterator &iter) const {
-            return ptr <= iter.ptr;
-        }
-
-        bool operator>=(const const_iterator &iter) const {
-            return ptr >= iter.ptr;
         }
 
         bool operator==(const iterator &iter) const {
