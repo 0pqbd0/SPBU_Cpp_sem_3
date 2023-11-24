@@ -3,7 +3,7 @@
 
 #include <iostream>
 #include <sstream>
-#include "list.h"
+#include "List.h"
 
 template<typename T>
 class Queue: public List<T> {
